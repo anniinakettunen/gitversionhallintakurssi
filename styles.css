@@ -1,9 +1,9 @@
-/* Koko sivun korkeus */
+
 html {
   height: 100%;
 }
 
-/* Taustaväri, fontti ja keskitys */
+
 body {
   background: linear-gradient(135deg, #fceabb, #f8b500); /* kaunis liukuväri */
   display: flex;
@@ -15,16 +15,16 @@ body {
   margin: 0;
 }
 
-/* Keskitetty sisältö */
+
 main {
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* läpikuultava tausta */
+  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Iso otsikko, hieman animointi */
+
 h1 {
   color: #333;
   font-size: 3rem;
@@ -32,7 +32,6 @@ h1 {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Pieni animaatio */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px);}
   to { opacity: 1; transform: translateY(0);}
