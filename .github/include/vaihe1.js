@@ -14,4 +14,5 @@ function setTime() {
   const datetime = `<p>Tänään on ${date}</p><p>Kello on ${time}</p>`;
 
   document.getElementById("datetime").innerHTML = datetime;
+
 }
