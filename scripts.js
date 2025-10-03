@@ -16,3 +16,6 @@ function setTime() {
   document.getElementById("datetime").innerHTML = datetime;
   document.getElementById("timeButton").addEventListener("click", setTime);
 }
+
+setTime();
+setInterval(setTime, 1000);
