@@ -1,0 +1,1 @@
+kohta 3 tehtävä 7: Tee pyynnön haaraan toinen talletus ja vie se etärepositorioon.
