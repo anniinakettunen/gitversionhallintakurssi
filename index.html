@@ -13,8 +13,32 @@
     <h1>Hei maailma!</h1>
 
     <div id="datetime"></div>
-    <button>Mitä kello on?</button>
+    <button id="timeButton">Mitä kello on?</button>
   </main>
+
+  <script>
+    function setTime() {
+      const now = new Date();
+
+      const time = now.toLocaleTimeString('fi-FI');
+
+      const dateOptions = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      };
+      const date = now.toLocaleDateString('fi-FI', dateOptions);
+
+      const datetime = `<p>Tänään on ${date}</p><p>Kello on ${time}</p>`;
+
+      document.getElementById("datetime").innerHTML = datetime;
+    }
+
+    // Lisää nappiin event listenerin kun sivu latautuu
+    document.getElementById("timeButton").addEventListener("click", setTime);
+  </script>
+
 
 </body>
 
